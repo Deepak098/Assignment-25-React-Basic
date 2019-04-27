@@ -1,21 +1,25 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+class counter extends Component {
+  state = { 
+     Age : 78
+   }
+  render() { 
+    return (<div>
+
+      <h1>Hi, This is a React App</h1>
+      <p>Your Name is Som And Your Age Is <span>{this.state.Age}</span></p>
+
+      <br></br>
+      <h1>Skills</h1>
+      <li>sleeping </li>
+      <li>writting codes</li><br></br>
+      <button>Makemeolder</button><button>greet</button>
+
       </div>
-    );
+      
+      );
   }
 }
-
-export default App;
+ 
+export default counter;
